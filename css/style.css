@@ -1,0 +1,48 @@
+body{
+    font-family:'Segoe UI';
+}
+
+
+.main-body{
+    border: 1px solid black;
+    height: 650px;
+    width: 375px;
+    margin:auto;
+    margin-top: 5%;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color:#303946 ;
+}
+.calculator-buttons{
+    display: grid;
+    font-size: 24px;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    top: 100px;
+    
+}
+
+.calculator-buttons .calc-button{
+    padding: 30px 0;
+    background-color: #303946;
+    color:#BBBDC1;
+    border: 1px solid #474f5c ;
+    outline: none;
+}
+.equals{
+    background-color: #9DBC7B !important;
+    color: white !important;
+}
+.operator{
+    background-color: #414853 !important;
+}
+.options{
+    float: right;
+    
+    margin-top:40px;
+    margin-right:30px;
+}
+.logo{
+    margin-top:20px;
+    margin-left:10px;
+}
