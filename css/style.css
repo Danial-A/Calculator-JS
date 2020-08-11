@@ -5,21 +5,22 @@ body{
 
 .main-body{
     border: 1px solid black;
-    height: 650px;
+    height: 700px;
     width: 375px;
     margin:auto;
     margin-top: 5%;
     border-radius: 50px;
     overflow: hidden;
     background-color:#303946 ;
+    transition:0.1s linear;
 }
 .calculator-buttons{
     display: grid;
     font-size: 24px;
     grid-template-columns: repeat(4,1fr);
     position: relative;
-    top: 100px;
-    
+    /* top: 60px;
+     */
 }
 
 .calculator-buttons .calc-button{
@@ -28,6 +29,7 @@ body{
     color:#BBBDC1;
     border: 1px solid #474f5c ;
     outline: none;
+    transition: 0.1s linear;
 }
 .equals{
     background-color: #9DBC7B !important;
@@ -35,14 +37,61 @@ body{
 }
 .operator{
     background-color: #414853 !important;
+    transition: 0.1s linear;
 }
 .options{
     float: right;
     
     margin-top:40px;
-    margin-right:30px;
+    margin-right:10px;
 }
 .logo{
     margin-top:20px;
     margin-left:10px;
+}
+.userVal{
+    color: #BBBDC1;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 10px;
+    text-align: right;
+    margin: 0;
+    margin-top: 20px;
+    
+}
+
+/* Toggle classes */
+.light-body{
+    background-color: #FCFBFC !important;
+    transition: 0.1s linear;
+    
+}
+.light-button{
+    background-color: #FFFFFF !important;
+    transition: 0.1s linear;
+    color: #4E4E4E !important;
+}
+.light-operator{
+    background-color: #F1F1F1 !important;
+    transition: 0.1s linear;
+    color: #4E4E4E !important;
+}
+
+.icons img:hover{
+    cursor: pointer;
+}
+
+.result{
+    color: #BBBDC1;
+    text-align: right;
+    font-size: 50px;
+    height: 80px;
+    margin: 0;
+    padding-right: 10px;
+  
+}
+
+.userVal-Light, .result-light{
+    color: #4E4E4E !important;
 }

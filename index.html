@@ -12,36 +12,40 @@
     <div class="container">
         <div class="main-body">
             <div class="icons">
-                <img src="./img/Sun.png" alt="" id="logo" class="logo" onclick="changeLogo()">
+                <img src="./img/Sun.png" alt="" id="logo" class="logo" onclick="toggleBackground()">
                 <img src="./img/Options_light.png" alt="" class="options">
+            </div>
+            <div class="text-areas">
+                <p class="userVal clear"></p>
+                <p class="result clear"></p>
             </div>
             <div class="calculator-buttons">
                 
-                <button class="calc-button operator">AC</button>
+                <button class="calc-button operator" onclick="document.querySelector('.userVal').innerText = '' " >AC</button>
                 <button class="calc-button operator">&plus;/&minus;</button>
-                <button class="calc-button operator">&percnt;</button>
-                <button class="calc-button operator">&divide;</button>
+                <button class="calc-button operator" onclick="document.querySelector('.userVal').innerHTML += ' % '">&percnt;</button>
+                <button class="calc-button operator" onclick="document.querySelector('.userVal').innerHTML += '/'">&divide;</button>
                
-                <button class="calc-button ">7</button>
-                <button class="calc-button">8</button>
-                <button class="calc-button">9</button>
-                <button class="calc-button operator">&times;</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 7">7</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 8">8</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 9">9</button>
+                <button class="calc-button operator" onclick="document.querySelector('.userVal').innerHTML += '*'">&times;</button>
 
-                <button class="calc-button">4</button>
-                <button class="calc-button">5</button>
-                <button class="calc-button">6</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 4">4</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 5">5</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 6">6</button>
                 <button class="calc-button operator">&minus;</button>
                 
 
-                <button class="calc-button">1</button>
-                <button class="calc-button">2</button>
-                <button class="calc-button">3</button>
-                <button class="calc-button operator">&plus;</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 1">1</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 2">2</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 3">3</button>
+                <button class="calc-button operator" onclick="document.querySelector('.userVal').innerHTML += '+'">&plus;</button>
 
-                <button class="calc-button">0</button>
-                <button class="calc-button">.</button>
-                <button class="calc-button">DEL</button>
-                <button class="calc-button equals">&equals;</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 0">0</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML +='.' ">.</button>
+                <button class="calc-button num">DEL</button>
+                <button class="calc-button equals" onclick="document.querySelector('.result').innerHTML = eval(document.querySelector('.userVal').innerHTML)">&equals;</button>
               
             </div>
         </div>
