@@ -82,6 +82,19 @@ body{
     cursor: pointer;
 }
 
+/* Output Areas */
+.userVal{
+    color: #BBBDC1;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 10px;
+    text-align: right;
+    margin: 0;
+    margin-top: 20px;
+    
+}
+
 .result{
     color: #BBBDC1;
     text-align: right;

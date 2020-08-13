@@ -6,7 +6,6 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
 </head>
 <body>
     <div class="container">
@@ -16,8 +15,8 @@
                 <img src="./img/Options_light.png" alt="" class="options">
             </div>
             <div class="text-areas">
-                <p class="userVal clear"></p>
-                <p class="result clear"></p>
+                <div class="userVal"></div>
+                <div class="result"></div>
             </div>
             <div class="calculator-buttons">
                 
@@ -34,7 +33,7 @@
                 <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 4">4</button>
                 <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 5">5</button>
                 <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 6">6</button>
-                <button class="calc-button operator">&minus;</button>
+                <button class="calc-button operator" onclick="document.querySelector('.userVal').innerHTML += '-'">&minus;</button>
                 
 
                 <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 1">1</button>
@@ -43,7 +42,7 @@
                 <button class="calc-button operator" onclick="document.querySelector('.userVal').innerHTML += '+'">&plus;</button>
 
                 <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += 0">0</button>
-                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML +='.' ">.</button>
+                <button class="calc-button num" onclick="document.querySelector('.userVal').innerHTML += clear() ">.</button>
                 <button class="calc-button num">DEL</button>
                 <button class="calc-button equals" onclick="document.querySelector('.result').innerHTML = eval(document.querySelector('.userVal').innerHTML)">&equals;</button>
               
